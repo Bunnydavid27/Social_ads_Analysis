@@ -1,0 +1,62 @@
+body{
+    background-image:url('social-network-ads-futuristic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    height:  10px;
+    text-align: auto;
+    font-style:italic;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+}
+
+form{
+    text-align: auto;
+}
+
+nav{
+    background-color:darkcyan;
+    border-color: black;
+    height: 50px;
+    text-align:center;
+    align-content: center;
+}
+#Listing{
+    text-align: left;
+}
+
+
+.predict{
+    text-align: left;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#gender_label{
+    color: snow;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+#Gender{
+    size: 100px;
+    font-size:medium;
+}
+.About{
+    text-align: left;
+    list-style-type: none;
+}
+
+h2{
+    text-decoration: none;
+    color: snow;
+}
+
+a{
+    text-decoration: none;
+    color:snow;
+}

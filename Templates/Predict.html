@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Social Ads Purchaser Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="static\Predict.css">
+  
+</head>
+
+<body>
+    <div>
+    <nav>
+        <h1>Social Network Ads Purchase Predictor</h1>
+    </nav>
+    </div>
+    <br><br>
+    
+ <div class="login">
+     <!-- Main Input For Receiving Query to our ML -->
+    <form method="post" action="/predict">
+    <label id="gender_label" for="Gender">Gender: </label>
+        <select name="Gender" id="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+		<input type="text" name="Age" placeholder="Age" required="required" />
+		<input type="text" name="Salary" placeholder="Salary" required="required" /> 
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form></div>
+    <br>
+    <br>
+    <div id ='result_output'>
+        <h2>Prediction Result: {{prediction_result}}</h2>
+
+</div>
+    <br>
+    <br>
+    <footer>
+        <div id="Listing">
+            <li class="Home"><h2><a href="/">Home</a></h2></li>
+            <li class="About"><h2><a href="/about">About Software</a></h2></li>
+    </div>
+    </footer>
+
+   
+
+ 
+
+
+</body>
+</html>
